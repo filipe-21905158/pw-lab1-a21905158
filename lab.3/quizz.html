@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Filipe Parreiras">
+        <meta name="keywords" content="Tokyo">
+        <meta name="description" content="Website sobre Tokyo">
+        <link rel="shortcut icon" type="image/x-icon" href="img/Japan.ico"/>
+        <title>Tokyo</title>
+    </head>
+    <body>
+        <body style="background-color:#aaa1a1"></body>
+        <h1>Tokyo</h1>
+        <hr>
+        <br>
+        <img src="img/Principal.png">
+        <br>
+        
+        <p><a href="index.html"><b>Introdução</b></a> | <a href="local.html">Localização</a>
+            | <a href="multimedia.html">Multimédia</a> | <a href="info.html">Informações</a> | <a href="../index.html">Home</a> | <a href="quizz.html">Quiz</a> | <a href="comentarios.html">Comentarios</a></p>
+        
+        <br><br>
+
+        <h3>Quizz</h3><ul>
+            <form action="GET" autocomplete="on">
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    Nome 
+                    <input type="text" name = "nome" placeholder="nome" size="30" maxlength = "15" autofocus>
+                    <br>
+                    Apelido
+                    <input type="text" name = "apelido" placeholder="apelido" size="30" maxlength = "15" autofocus>
+                    <br>
+                    email
+                    <input type="email" name = "email" placeholder="email" size="30">
+                    <br>
+            
+                </fieldset>
+
+                <br><br>
+
+                <fieldset>
+                    <legend><h3>Sobre a cidade:</h3></legend>
+                    <br><br>
+
+                    What does the word “Tokyo” mean?
+                    <br><br>
+                    <label for="Bay City">Bay city</label>
+                    <input type="radio" id = "Bay city" name="text" value = "Bay City">
+                    <br>
+                    <label for="City of cherry Trees">City of Cherry Trees</label>
+                    <input type="radio" id = "City of cherry Trees" name="text" value = "City of cherry Trees">
+                    <br>
+                    <label for="Easter Capital">Easter Capital</label>
+                    <input type="radio" id = "Easter Capital" name="text" value = "Easter Capital">
+                    <br>
+                    <label for="City of Power">Easter Capital</label>
+                    <input type="radio" id = "City of Power" name="text" value = "City of Power">
+
+                    <br><br>
+
+                    How tall is Tokyo Tower, Japan’s most famous observation tower?
+                    <br>
+                    <br>
+                    <label for="253m">253m</label>
+                    <input type="checkbox" id = "253m" name="text" value = "253m">
+                    <br>
+                    <label for="294m">294m</label>
+                    <input type="checkbox" id = "294m" name="text" value = "294m">
+                    <br>
+                    <label for="335m">335m</label>
+                    <input type="checkbox" id = "335m" name="text" value = "335m">
+                    <br>
+                    <label for="370m">370m</label>
+                    <input type="checkbox" id = "370m" name="text" value = "370m">
+                    
+                    <br><br>
+
+                    What is the name of Tokyo’s famous fish market?
+                    <br>
+                    <br>
+                    <label for="Tsukiji" aria-setsize="">Tsukiji</label>
+                    <input type="radio" id = "Tsukiji" name="text" value = "Tsukiji">
+                    <br>
+                    <label for="Onagawa">Onagawa</label>
+                    <input type="radio" id = "Onagawa" name="text" value = "Onagawa">
+                    <br>
+                    <label for="Karato">Karato</label>
+                    <input type="radio" id = "Karato" name="text" value = "Karato">
+                    <br>
+                    <label for="Nakazato">Nakazato</label>
+                    <input type="radio" id = "Nakazato" name="text" value = "Nakazato">
+
+                    <br><br>
+
+                    <label for="Electric Town">You've come to Tokyo to buy armloads of electronics - cameras, stereos, computers, mobile phones etc. Where can you find "Electric Town", the discount electronics capital?</label>
+                    
+                    <br>
+
+                    <select id="Electric Town" name="Electric Town">
+                        <option value="Akihabara">Akihabara</option>
+                        <option value="Harajuku">Harajuku</option>
+                        <option value="Ueno" selected>Ueno</option>
+                        <option value="Shinjuku">Shinjuku</option>
+                      </select>
+
+                    <br><br>
+
+
+                    <label for="Railway">When did the first orient railway station opened?</label>
+                    <input type="date" id="Railway" name="Railway" min="1927-01-01" max="1927-12-31">
+
+                    <br> <br>
+
+                    <label for="favcolor">Introduza uma cor presente na bandeira do Japão:</label>
+                    <input type="color" id="red" name="favcolor" value="#ff0000">
+
+                    <br><br>
+                    
+                    <label for="Cidades">Quantos anos tem tokyo?</label>
+                    <input type="number" id="Cidades" name="Cidades" max="600" min="500">
+
+                    <br><br>
+
+                    <label for="vol">Qual e o valor arredondado da população de toquio(em milhoes):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="30">
+
+                    <br><br>
+
+                    <label for="famous temple">What is the name of the famous temple located in Asakusa?</label>
+
+                    
+                    <input list="temple" name="temple">
+                    <datalist id="temple">
+                        <option value="Meiji-jingu">
+                        <option value="Senso-ji">
+                        <option value="Zojo-ji">
+                        <option value="Opera">
+                        <option value="Asakusa-san">
+                    </datalist>
+                      
+                    
+                    <br><br>
+
+                    <form oninput="yen.value = parseInt(eur.value) *120">
+                        <fieldset>
+                        <legend>Transferencia de Yen Japonês </legend>
+                        <p>Eur: <input type="number" name="eur"> EUR</p>
+                        <p>Yen: <output name="yen"> 0</output> JPY</p>
+                        </fieldset>
+                        </form>
+
+                    <br><br>
+
+                    <h3>Comentarios:</h3>
+                    
+
+                    <form action="/action_page.php">
+                    <textarea name="message" rows="10" cols="30">Deixe um comentaraio.</textarea>
+                    <br><br>
+                    </form>
+                    
+                    <input type="image" src="img/submit1.gif" alt="Submit" width="50" height="50">
+                    <br><br>
+
+                </fieldset>
+            </form>
+            <br>
+            <br>
+
+            <svg width="600" height="600">
+                <g transform="translate(100,100)"> 
+                  <text id="TextElement" x="0" y="0" style="font-family:Fantasy;font-size:20; visibility:hidden"><a href="index.html">Introdução</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                  </text> 
+              
+                  <text id="TextElement" x="0" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="local.html">Localização</a>
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                      <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                      <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                    </text>
+              
+                  <text id="TextElement" x="38" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="multimedia.html">Multimédia</a>
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                      <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                      <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                  </text>
+              
+              
+                  <text id="TextElement" x="77" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="quizz.html">Quiz</a>
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                      <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                      <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                  </text>
+              
+                  <text id="TextElement" x="0" y="20" style="font-family:Fantasy;font-size:8; visibility:hidden"><a href="info.html">Informações</a>
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                      <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                      <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                  </text>
+              
+                  <text id="TextElement" x="47" y="20" style="font-family:Fantasy;font-size:8; visibility:hidden"><a href="comentarios.html">Comentarios</a>
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                      <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                      <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                  </text>
+                </g> 
+              </svg>
+       
+
+
+       <hr>
+    </ul>
+    </body>
+</html>
