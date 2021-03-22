@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Filipe Parreiras">
+        <meta name="keywords" content="Tokyo">
+        <meta name="description" content="Website sobre Tokyo">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/Japan.ico"/>
+        <title>Tokyo</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class="grid-container">
+        <link rel="stylesheet" href="estilos.css">
+        
+        <header class = "header">
+            <h1>Tokyo   </h1>
+            <hr>
+            <br>
+            <figure>
+                <img src="img/Principal.png">
+                <figcaption >
+                    (Shinjuku)
+                </figcaption>
+            </figure>
+            <br>
+        </header>
+            <br>
+        
+            <nav style="font-size: x-small;" class="nav">
+
+                <div class="div1">
+                  <a href="index.html" ><i class="material-icons">power_settings_new</i><b>Introdução</b></a>
+                  <a href="local.html"><i class="material-icons">map</i>Localização</a>
+                  <a href="multimedia.html"><i class="material-icons">camera</i>Multimédia</a>
+                  <a href="info.html"><i class="material-icons">perm_device_information</i>Informações</a>
+                </div>
+                <div class="div2">
+                  <a href="quizz.html"><i class="material-icons">block</i>Quiz</a>
+                  <a href="comentarios.html"><i class="material-icons">add_box</i>Comentarios</a>
+                  <a href="html5-css.html"><i class="material-icons">change_history</i>CSS</a>
+                </div>
+                <div class="div3">
+                  <a href="../index.html"><i class="material-icons">home</i>Home</a>
+                </div>
+                
+              </nav>
+
+            <main class = "main">
+
+            <h3 class="titulo">Comentários:</h3>
+            <ul>
+            <fieldset>
+
+                <label for="clareza">clareza (compreensível, em que o significado pode ser identificado sem que haja confusão ou ambiguidade.)</label>
+                <select id="clareza" name="clareza">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="rigor">Rigor (livre de erros)</label>
+                <select id="rigor" name="clareza">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="precisão">Precisão (exato, segundo o nível necessário do pormenor)</label>
+                <select id="precisão" name="precisão">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="profundidade">Profundidade (contém complexidades e múltiplas inter-relações)</label>
+                <select id="profundidade" name="profundidade">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="amplitude">Amplitude (que abrange diferentes aspectos, pontos de vista, pespectivas)</label>
+                <select id="amplitude" name="amplitude">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="lógica">Lógica (em que as partes fazem sentido num todo, sem contradições: faz sentido no conjunto, provém de evidências))</label>
+                <select id="lógica" name="lógica">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+
+                <br><br>
+
+                <label for="significância">Significância (focado no importante, não trivial)</label>
+                <select id="significância" name="significância">
+                    <option value="Muito bom">Muito bom</option>
+                    <option value="Bom">Bom</option>
+                    <option value="medio" selected>medio</option>
+                    <option value="MauMau">Mau</option>   
+                    <option value="Pessimo">Pessimo</option>
+                </select>
+                </select>
+
+                <br><br>
+
+                <p>Originalidade (criativo e original)</p>
+                <label for="253m">Original e criativo</label>
+                <input type="checkbox" id = "253m" name="text" value = "253m">
+                <br>
+                <label for="294m">Original</label>
+                <input type="checkbox" id = "294m" name="text" value = "294m">
+                <br>
+                <label for="335m">Criativo</label>
+                <input type="checkbox" id = "335m" name="text" value = "335m">
+
+                <br><br>
+
+                <p>Recomendaria este site?</p>
+            
+                <label for="Sim">Sim</label>
+                <input type="radio" id = "Sim" name="text" value = "Sim">
+                <br>
+                <label for="Nao">Nao</label>
+                <input type="radio" id = "Nao" name="text" value = "Nao">
+
+                <br><br>
+
+                <h3>Sugestoes:</h3>
+                
+
+                <form action="/action_page.php">
+                <textarea name="message" rows="10" cols="30">Para possiveis melhorias.</textarea>
+                <br><br>
+                <input type="button" class="button" value="Submeter">
+                </form>
+            </fieldset>
+            
+        </ul>
+        
+        <br>
+        <hr>
+        <br>
+        <svg width="600" height="350">
+            <g transform="translate(100,100)"> 
+                <text id="TextElement" x="0" y="0" style="font-family:Fantasy;font-size:20; visibility:hidden"><a href="index.html">Introdução</a>
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text> 
+            
+                <text id="TextElement" x="0" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="local.html">Localização</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text>
+            
+                <text id="TextElement" x="38" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="multimedia.html">Multimédia</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text>
+            
+            
+                <text id="TextElement" x="77" y="10" style="font-family:Fantasy;font-size:7; visibility:hidden"><a href="quizz.html">Quiz</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text>
+            
+                <text id="TextElement" x="0" y="20" style="font-family:Fantasy;font-size:8; visibility:hidden"><a href="info.html">Informações</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text>
+            
+                <text id="TextElement" x="47" y="20" style="font-family:Fantasy;font-size:8; visibility:hidden"><a href="comentarios.html">Comentarios</a>
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+                </text>
+            </g> 
+            </svg>
+        </main>
+
+        <br>
+        <br>
+
+        <aside style="margin-left: 200px;" class="aside">
+          
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+              <figure>
+                  <img src="img/aside_picture_1.jpg" alt="">
+                  
+              </figure>
+              <figure>
+                <img src="img/aside_picture_2.jpg" alt="">
+              </figure>
+  
+  
+              <p style="color: whitesmoke ; margin-right: 100px;">‘Japan, not only a mega-busy city that thrives on electronics and efficiency, actually has an almost sacred appreciation of nature. One must travel outside of Tokyo to truly experience the ‘old Japan’ and more importantly feel these aspects of Japanese culture.’⛩️</p>
+  
+  
+          </aside>
+
+        <br>
+        <br>
+        <hr>
+
+        <footer class = "footer">
+            <p>Filipe Parreiras, 21905158, ULHT, 2 ano</p>
+        </footer>
+    </body>
+</html>

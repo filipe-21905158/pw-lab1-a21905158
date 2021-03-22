@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
+        <style>
+
+            .grid-container {
+            width: 100%;
+            height: 100%;
+            animation: pulse 5s infinite;
+            }
+        
+            @keyframes pulse {
+                0% {
+                background-color: rgba(241, 95, 95, 0.8);
+                }
+
+                50% {
+                background-color: rgba(245, 57, 57, 0.8);
+                }
+
+                100% {
+                background-color: rgba(241, 95, 95, 0.8);
+                }
+            }
+            .main{
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
         <title>PW Labs</title>
     </head>
-    <body style="background-color:#aaa1a1">
+    <body class = "grid-container">
         <h1 style="color : WhiteSmoke; text-shadow: 2px 2px rgb(230, 118, 118);"><b>Laboratórios Programação Web:</b></h1>
+
         <hr>
         <br>
-        <p>Laboratório 1: Conhecer a Internet com a minha primeira página Web<a href="lab.1/index.html">(lab1);</a></p>
-        <p>Laboratório 2: Explorando o HTML com o meu primeiro website<a href="lab.2/index.html">(lab2);</a></p>
-        <p>Laboratório 3: Inclusão de formulários e imagens SVG no meu website<a href="lab.3/index.html">(lab3);</a></p>
-        <p>Laboratório 4: Integração de elementos semânticos HTML5 no meu website e estilização com seletores e propriedades CSS <a href="lab.4/index.html">(lab4);</p>
 
+        <main class="main">
+            <p>Laboratório 1: Conhecer a Internet com a minha primeira página Web<a href="lab.1/index.html">(lab1)</a>;</p>
+            <p>Laboratório 2: Explorando o HTML com o meu primeiro website<a href="lab.2/index.html">(lab2)</a>;</p>
+            <p>Laboratório 3: Inclusão de formulários e imagens SVG no meu website<a href="lab.3/index.html">(lab3)</a>;</p>
+            <p>Laboratório 4: Integração de elementos semânticos HTML5 no meu website e estilização com seletores e propriedades CSS<a href="lab.4/index.html">(lab4)</a>;</p>
+            <p>Laboratório 5: Website responsivo e dinâmico<a href="lab.5/index.html">(lab5)</a>;</p>
+        </main>
     </body>
 </html>
